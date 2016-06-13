@@ -7,8 +7,9 @@ A very simple container for outputting events for when files change. Simply moun
 
 ## Example
 
+Run the following container, then run `touch /tmp/baz` in another shell:
 ```bash
-$ docker run -v /tmp/inotify:/watch -it inotify-print
+$ docker run -v /tmp/inotify:/watch -it four43/inotify-print
 Setting up watches.
 Watches established.
 [2016-06-13T18:51:08Z] CREATE /watch/baz
